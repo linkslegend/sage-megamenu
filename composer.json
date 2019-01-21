@@ -1,0 +1,19 @@
+{
+  "name": "linkslegend/sage-megamenu",
+  "description": "Bootstrap 4 Navbar component navwalker for Sage 9 based themes",
+  "keywords": ["wordpress", "bootstrap 4", "navwalker", "iconmenu", "navbar"],
+  "homepage": "https://github.com/linkslegend/sage-megamenu",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "rob",
+      "email": "rd.intermac@gmail.com"
+		}
+  ],
+  "require": {
+    "php": ">=5.3.2"
+  },
+	"autoload": {
+    "files": ["bootstrap4-navwalker.php"]
+  }
+}
