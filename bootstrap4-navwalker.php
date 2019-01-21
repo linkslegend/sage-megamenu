@@ -3,7 +3,6 @@ namespace App;
 /**
  * Bootstrap 4 "Navbar" component navwalker drop-in functionality for Sage 9
  * Version: 1.0
- * Author: Michael W. Delaney
  *
  */
 
@@ -87,7 +86,8 @@ if (class_exists('\Walker_Nav_Menu')) {
     			$attributes = !empty($item->attr_title) ? ' title="'.esc_attr($item->attr_title).'"' : '';
     			$attributes .= !empty($item->target) ? ' target="'.esc_attr($item->target).'"' : '';
     			$attributes .= !empty($item->xfn) ? ' rel="'.esc_attr($item->xfn).'"' : '';
-    			$attributes .= !empty($item->url) ? ' href="'.esc_attr($item->url).'"' : '';
+          $attributes .= !empty($args->has_children) ? ' href="#"' : '';
+          $attributes .= ($item->url) ? ' href="'.esc_attr($item->url).'"' : '';
           $attributes .= ($args->has_children) ? ' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"' : '';
     			$item_output = $args->before;
     			$item_output .= '<a'.$attributes.'>';
