@@ -1,4 +1,4 @@
-# Sage 9 friendly Bootstrap 4 Navwalker
+# Sage 9 friendly Bootstrap 4 Navwalker (icon mega menu)
 
 Sets up a small megamenu icon menu for Sage 9-based themes.
 
